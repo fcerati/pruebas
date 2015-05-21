@@ -1,8 +1,8 @@
-package pattern.factory;
+package pattern.abstracts.factory;
 
 import pattern.commons.Constantes;
 
-public class ShapeFactory {
+public class ShapeFactory extends AbstractFactory {
 
 	public Shape getShape(String shapeType) {
 		
@@ -16,6 +16,11 @@ public class ShapeFactory {
 			return new Rectangle();
 		}
 
+		return null;
+	}
+
+	@Override
+	Color getColor(String color) {
 		return null;
 	}
 

@@ -1,5 +1,7 @@
 package pattern.factory;
 
+import pattern.commons.Constantes;
+
 public class FactoryPatternDemo {
 
 	public static void main(String[] args) {
