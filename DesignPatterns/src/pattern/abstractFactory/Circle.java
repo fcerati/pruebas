@@ -1,4 +1,4 @@
-package pattern.abstracts.factory;
+package pattern.abstractFactory;
 
 public class Circle implements Shape {
 
