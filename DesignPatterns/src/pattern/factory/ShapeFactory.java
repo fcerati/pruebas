@@ -4,7 +4,7 @@ import pattern.commons.Constantes;
 
 public class ShapeFactory {
 
-	public Shape getShape(String shapeType) {
+	public IShape getShape(String shapeType) {
 		
 		if (shapeType == null) {
 			return null;

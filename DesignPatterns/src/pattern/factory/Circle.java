@@ -1,6 +1,6 @@
 package pattern.factory;
 
-public class Circle implements Shape {
+public class Circle implements IShape {
 
 	@Override
 	public void draw() {

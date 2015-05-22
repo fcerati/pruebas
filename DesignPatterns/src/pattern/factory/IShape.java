@@ -1,6 +1,6 @@
 package pattern.factory;
 
-public interface Shape {
+public interface IShape {
 
 	public void draw();
 	
