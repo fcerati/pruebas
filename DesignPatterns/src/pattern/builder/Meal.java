@@ -1,31 +1,37 @@
 package pattern.builder;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Meal {
 
-	private List<Item> items = new ArrayList<Item>();
+	private String drink;
+	private String mainCourse;
+	private String side;
 
-	public void addItem(Item item) {
-		items.add(item);
+	public String getDrink() {
+		return drink;
 	}
 
-	public float getCost() {
-		float cost = 0.0f;
-
-		for (Item item : items) {
-			cost += item.price();
-		}
-		return cost;
+	public void setDrink(String drink) {
+		this.drink = drink;
 	}
 
-	public void showItems() {
-
-		for (Item item : items) {
-			System.out.print("Item : " + item.name());
-			System.out.print(", Packing : " + item.packing().pack());
-			System.out.println(", Price : " + item.price());
-		}
+	public String getMainCourse() {
+		return mainCourse;
 	}
+
+	public void setMainCourse(String mainCourse) {
+		this.mainCourse = mainCourse;
+	}
+
+	public String getSide() {
+		return side;
+	}
+
+	public void setSide(String side) {
+		this.side = side;
+	}
+
+	public String toString() {
+		return "drink:" + drink + ", main course:" + mainCourse + ", side:"	+ side;
+	}
+
 }

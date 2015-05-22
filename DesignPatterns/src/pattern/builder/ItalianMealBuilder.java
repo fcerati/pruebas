@@ -1,26 +1,26 @@
-package pattern.easyBuilder;
+package pattern.builder;
 
-public class JapaneseMealBuilder implements IMealBuilder {
-
+public class ItalianMealBuilder implements IMealBuilder {
+	
 	private Meal meal;
 
-	public JapaneseMealBuilder() {
+	public ItalianMealBuilder() {
 		meal = new Meal();
 	}
 
 	@Override
 	public void buildDrink() {
-		meal.setDrink("sake");
+		meal.setDrink("red wine");
 	}
 
 	@Override
 	public void buildMainCourse() {
-		meal.setMainCourse("chicken teriyaki");
+		meal.setMainCourse("pizza");
 	}
 
 	@Override
 	public void buildSide() {
-		meal.setSide("miso soup");
+		meal.setSide("bread");
 	}
 
 	@Override

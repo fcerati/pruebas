@@ -1,4 +1,4 @@
-package pattern.easyBuilder;
+package pattern.builder;
 
 
 public class Demo {
